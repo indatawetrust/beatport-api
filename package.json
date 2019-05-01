@@ -8,7 +8,7 @@
     "ava": "^1.4.1"
   },
   "name": "beatport-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "beatport unofficial api",
   "main": "index.js",
   "scripts": {

@@ -79,11 +79,12 @@ class Api {
     } else {
       genre = {
         url: '',
+        code: '',
       };
     }
 
-    if (this.cacheGet(`top100${genre}`)) {
-      return this.cacheGet(`top100${genre}`);
+    if (this.cacheGet(`top100${genre.code}`)) {
+      return this.cacheGet(`top100${genre.code}`);
     }
 
     const $ = await this.get(genre.url + '/top-100');
@@ -100,7 +101,7 @@ class Api {
       images: item.images,
     }));
 
-    this.cacheSet(`top100${genre}`, value);
+    this.cacheSet(`top100${genre.code}`, value);
 
     return value;
   }
