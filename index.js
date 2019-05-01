@@ -46,11 +46,11 @@ class Api {
   }
 
   async genres() {
-    const $ = await this.get('');
-
     if (this.cacheGet('genres')) {
       return this.cacheGet('genres');
     }
+
+    const $ = await this.get('');
 
     this._genres = $(
       'body > div.header-container > div > div > div.mobile-menu-body > ul > li.nav-links.genre-parent.head-parent > div > div:nth-child(2) .genre-drop-list__genre',
