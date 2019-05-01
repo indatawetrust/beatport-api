@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "lru-cache": "^5.1.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "ava": "^1.4.1"
+  },
+  "name": "beatport-api",
+  "version": "1.0.0",
+  "description": "beatport unofficial api",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indatawetrust/beatport-api.git"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "indatawetrust",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indatawetrust/beatport-api/issues"
+  },
+  "homepage": "https://github.com/indatawetrust/beatport-api#readme"
+}
