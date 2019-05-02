@@ -94,11 +94,15 @@ class Api {
     eval($('#data-objects').html());
 
     const value = window.Playables.tracks.map(item => ({
+      id: item.id,
+      tag: `${item.slug}/${item.id}`,
+      slug: item.slug,
       artist: item.artists,
       genres: item.genres,
       title: item.title,
       duration: item.duration,
       images: item.images,
+      preview: item.preview,
     }));
 
     this.cacheSet(`top100${genre.code}`, value);
