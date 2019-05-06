@@ -6,7 +6,7 @@ class Api {
     const LRU = require('lru-cache'),
       options = {
         max: 0,
-        maxAge: 1000 * 60 * 60,
+        maxAge: 5184e6,
       };
     this.cache = new LRU(options);
 
