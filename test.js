@@ -1,11 +1,11 @@
-import test from 'ava';
-import bpapi from '.';
+const test = require('ava')
+const bpapi = require('.')
 
 test('genres', async t => {
     
   const genres = await bpapi.genres()
 
-  t.is(genres.length, 31)
+  t.is(genres.length, 32)
 
 })
 

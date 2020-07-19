@@ -5,10 +5,10 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "ava": "^1.4.1"
+    "ava": "^3.10.1"
   },
   "name": "beatport-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "beatport unofficial api",
   "main": "index.js",
   "scripts": {
